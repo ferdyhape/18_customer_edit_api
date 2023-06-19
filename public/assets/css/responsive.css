@@ -1,0 +1,36 @@
+
+/* Smartphone */
+@media screen and (max-width : 576px) {
+    .card .form-control {
+        width: 100%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .row [class^="col-"] {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
+/* Tablet */
+@media screen and (max-width : 768px) {
+    
+}
+
+/* Desktop */
+@media screen and (max-width : 992px) {
+   /* .card .form-control {
+        width: 50%;
+   } */
+}
+
+/* Monitor */
+@media screen and (max-width : 1200px) {
+   /* .min-h-screen {
+        min-height: 120vh;
+   } */
+}
