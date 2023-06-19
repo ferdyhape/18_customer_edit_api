@@ -24,7 +24,7 @@
             @foreach ($partners as $partner)
                 <div class="col-1 col-sm-4 col-lg-3 col-xl-3 card shadow border-0 px-0 card-hover-animation">
                     <div style="height: 200px">
-                        <img src="http://localhost:5000/api/user/partner/avatar/{{ $partner['id'] }}?token={{ session('token') }}"style="width: 100%; height: 100%; object-fit: cover;"
+                        <img src="http://143.198.213.176/api/user/partner/avatar/{{ $partner['id'] }}?token={{ session('token') }}"style="width: 100%; height: 100%; object-fit: cover;"
                             alt="">
                     </div>
                     <div class="card-body px-4">

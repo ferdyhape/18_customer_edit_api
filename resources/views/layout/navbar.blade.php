@@ -67,7 +67,7 @@
                             <div class="dropdown x-3 py-auto">
                                 <div class="avatar nav-link">
                                     @if ($userData['avatar'])
-                                        <img src="http://localhost:5000/api/user/avatar?token={{ session('token') }}"
+                                        <img src="http://143.198.213.176/api/user/avatar?token={{ session('token') }}"
                                             alt="">
                                     @else
                                         <i class="bi bi-person-fill my-auto"></i>

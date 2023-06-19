@@ -11,7 +11,7 @@
                         <div class="card border-0 shadow col-12 col-lg-10 mx-auto mb-3">
                             <div class="card-body d-lg-flex flex-lg-row d-sm-flex flex-sm-column">
                                 <div class="col-lg-3 col-xl-3 col-sm-12 col-xs-12 text-center">
-                                    <img src="http://localhost:5000/api/user/partner/avatar/{{ $call['partner_id'] }}?token={{ session('token') }}"
+                                    <img src="http://143.198.213.176/api/user/partner/avatar/{{ $call['partner_id'] }}?token={{ session('token') }}"
                                         alt="img-fluid" style="width: 100%; height:200px; object-fit:cover">
                                 </div>
                                 <div
