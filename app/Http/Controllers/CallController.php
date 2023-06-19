@@ -14,7 +14,7 @@ class CallController extends Controller
             'Authorization' => 'Bearer ' . session('token')
         ]]);
 
-        $cResponse = $client->request('POST', "http://localhost:5000/api/user/call/$id", ['json' => [
+        $cResponse = $client->request('POST', "http://143.198.213.176/api/user/call/$id", ['json' => [
             'message' => $request->message,
             'address' => $request->address,
             'link_google_map' => $request->link_google_map,
@@ -30,7 +30,7 @@ class CallController extends Controller
         $client = new Client(['headers' => [
             'Authorization' => 'Bearer ' . session('token')
         ]]);
-        $cResponse = $client->request('GET', "http://localhost:5000/api/user/call/partner/session('partner')");
+        $cResponse = $client->request('GET', "http://143.198.213.176/api/user/call/partner/session('partner')");
         $cBody = $cResponse->getBody()->getContents();
         $cData = json_decode($cBody, true);
         extract($cData);
@@ -41,7 +41,7 @@ class CallController extends Controller
         $client = new Client(['headers' => [
             'Authorization' => 'Bearer ' . session('token')
         ]]);
-        $cResponse = $client->request('POST', "http://localhost:5000/api/user/call/update/$id", ['json' => ['order_status' => $request->progres]]);
+        $cResponse = $client->request('POST', "http://143.198.213.176/api/user/call/update/$id", ['json' => ['order_status' => $request->progres]]);
         $cBody = $cResponse->getBody()->getContents();
         $cData = json_decode($cBody, true);
         extract($cData);
@@ -52,7 +52,7 @@ class CallController extends Controller
         $client = new Client(['headers' => [
             'Authorization' => 'Bearer ' . session('token')
         ]]);
-        $cResponse = $client->request('POST', "http://localhost:5000/api/user/call/update/$id", ['json' => ['order_status' => 8]]);
+        $cResponse = $client->request('POST', "http://143.198.213.176/api/user/call/update/$id", ['json' => ['order_status' => 8]]);
         $cBody = $cResponse->getBody()->getContents();
         $cData = json_decode($cBody, true);
         extract($cData);
